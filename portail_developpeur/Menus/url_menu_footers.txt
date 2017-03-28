@@ -1,0 +1,4 @@
+Accueil			/index
+APIs			/apis
+Support			/support
+Conditions d'utilisation		/terms
