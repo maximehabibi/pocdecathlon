@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-nav-title> 
+    {{activite_selectionne.nom_activite}}
+  </ion-nav-title>
+  <ion-content padding="true" class="has-header">
+    <form class="list">
+      <label class="item item-input">
+        <span class="input-label">
+          {{evenement_selectionne.lieu}}, {{evenement_selectionne.date}}. {{activite_selectionne.heure_activite}}.
+        </span>
+      </label>
+    </form>
+    <div>
+      {{activite_selectionne.description}}
+    </div>
+    <div>
+    nombre d'inscrits : {{activite_selectionne.inscris.length}}/{{activite_selectionne.limit_particip_activ}}
+    </div>
+    <button style="color:#FFFFFF;" ng-click="inscription()" class="button button-balanced  button-block icon-right ion-arrow-right-c">
+      S'inscrire à cet évenement !
+    </button>
+      <img src="{{activite_selectionne.image}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+  </ion-content>
+</ion-view>
